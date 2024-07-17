@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Questions-Réponses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jeu de Questions-Réponses</h1>
+        <div class="intro">
+            <label for="name">Entrez votre nom: </label>
+            <input type="text" id="name" name="name">
+            <button id="startButton">Commencer le jeu</button>
+        </div>
+        <div class="question-container" id="questionContainer">
+            <p id="question">Question cachée</p>
+            <div class="answers">
+                <button class="answer">Réponse 1</button>
+                <button class="answer">Réponse 2</button>
+                <button class="answer">Réponse 3</button>
+            </div>
+            <div class="message" id="message"></div>
+            <button id="nextButton" style="display:none;">Question Suivante</button>
+        </div>
+        <div class="result" id="result" style="display:none;">
+            <p id="resultMessage"></p>
+            <button id="restartButton">Recommencer</button>
+        </div>
+        <div class="history">
+            <h2>Historique des scores</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
